@@ -1,187 +1,132 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LocalChatTrans 隐私政策 / Privacy Policy</title>
+  <title>LocalChatTrans Privacy Policy</title>
   <style>
     :root {
-      --bg: #f6f8fb;
+      --bg: #f7f8fb;
       --card: #ffffff;
       --text: #1f2937;
-      --sub: #4b5563;
+      --muted: #4b5563;
       --line: #e5e7eb;
-      --brand: #2563eb;
+      --brand: #1d4ed8;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
-        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: var(--bg);
+      color: var(--text);
       line-height: 1.65;
     }
-    .wrap {
-      max-width: 920px;
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      padding: 24px 16px 48px;
+      padding: 24px 16px 40px;
     }
     .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 16px;
+      padding: 22px;
+      margin-bottom: 14px;
     }
-    h1, h2, h3 {
-      margin: 0 0 12px;
-      line-height: 1.35;
-    }
+    h1, h2 { margin: 0 0 12px; line-height: 1.35; }
     h1 { font-size: 28px; }
-    h2 { font-size: 20px; color: #111827; margin-top: 20px; }
-    h3 { font-size: 16px; color: #111827; margin-top: 14px; }
-    p, li { color: var(--sub); }
+    h2 { font-size: 19px; margin-top: 8px; }
+    p, li { color: var(--muted); }
     ul { margin: 8px 0 8px 18px; padding: 0; }
-    .meta {
-      color: #6b7280;
-      font-size: 14px;
-    }
-    .brand {
-      color: var(--brand);
-      font-weight: 700;
-    }
+    .meta { font-size: 14px; color: #6b7280; }
+    .brand { color: var(--brand); font-weight: 700; }
     code {
       background: #eff6ff;
       border: 1px solid #dbeafe;
       border-radius: 6px;
-      padding: 2px 6px;
-      color: #1d4ed8;
+      padding: 1px 6px;
+      color: #1e40af;
     }
     a { color: #1d4ed8; }
   </style>
 </head>
 <body>
-  <main class="wrap">
+  <main class="container">
     <section class="card">
-      <h1><span class="brand">LocalChatTrans</span> 隐私政策</h1>
-      <p class="meta">生效日期 / Last Updated: 2026-04-20</p>
+      <h1><span class="brand">LocalChatTrans</span> Privacy Policy</h1>
+      <p class="meta">Effective date: 2026-04-20</p>
       <p>
-        欢迎使用 LocalChatTrans。我们重视您的隐私与数据安全。本政策说明我们如何收集、使用、存储和保护信息。
-      </p>
-      <p>
-        Welcome to LocalChatTrans. We value your privacy and data security. This policy explains how we collect, use, store, and protect information.
+        This Privacy Policy explains how LocalChatTrans ("we", "our", "the app") handles user data.
+        We are committed to data minimization and local-first processing.
       </p>
     </section>
 
     <section class="card">
-      <h2>1. 我们处理的信息 / Information We Process</h2>
-      <h3>1.1 聊天文本（本地处理）</h3>
-      <p>
-        应用通过无障碍服务读取您在受支持聊天应用界面中可见的文本，用于本地翻译和在浮窗中展示结果。该聊天内容默认不会上传到开发者服务器。
-      </p>
-      <p>
-        The app uses Accessibility Service to read visible text in supported chat apps for local translation and overlay display. Chat content is not uploaded to the developer's server by default.
-      </p>
-
-      <h3>1.2 设备与网络状态信息</h3>
-      <p>
-        为下载/更新离线翻译模型、判断网络可用性（Wi-Fi/移动网络）以及保障基础功能，应用会使用网络状态相关信息。
-      </p>
-      <p>
-        To download/update offline translation models, detect network availability (Wi-Fi/mobile), and keep basic features working, the app processes network-state related information.
-      </p>
-
-      <h3>1.3 订阅相关信息</h3>
-      <p>
-        如您购买订阅，支付与订单由 Google Play Billing 处理。我们仅接收与订阅状态相关的必要结果信息，不会获取您的完整支付卡信息。
-      </p>
-      <p>
-        If you purchase a subscription, payment and order processing are handled by Google Play Billing. We only receive necessary subscription status results and do not receive your full card details.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>2. 权限说明 / Permissions</h2>
+      <h2>1. Data We Process</h2>
       <ul>
-        <li><code>BIND_ACCESSIBILITY_SERVICE</code>: 读取界面可见文本以进行本地翻译（需您手动授权）。</li>
-        <li><code>SYSTEM_ALERT_WINDOW</code>: 在聊天界面上显示翻译浮窗。</li>
-        <li><code>INTERNET</code>: 下载/更新离线模型、处理订阅相关通信。</li>
-        <li><code>ACCESS_NETWORK_STATE</code>: 检测网络状态以优化下载行为。</li>
-        <li><code>POST_NOTIFICATIONS</code>: 显示服务状态通知（Android 13+）。</li>
-        <li><code>FOREGROUND_SERVICE</code>: 在前台服务模式下稳定运行翻译功能。</li>
+        <li><strong>On-screen chat text (local processing):</strong> used to provide translation in supported chat apps.</li>
+        <li><strong>Network state:</strong> used to detect connectivity and manage offline model downloads.</li>
+        <li><strong>Subscription status:</strong> used to enable paid features via Google Play Billing.</li>
       </ul>
       <p>
-        您可随时在系统设置中撤销相关权限。撤销后，相关功能可能无法使用。
-      </p>
-      <p>
-        You can revoke these permissions at any time in system settings. Related features may stop working after revocation.
+        We do not sell personal data. Chat text is not uploaded to our server for advertising purposes.
       </p>
     </section>
 
     <section class="card">
-      <h2>3. 数据共享 / Data Sharing</h2>
-      <p>
-        我们不会将您的聊天内容出售给第三方，也不会将聊天文本用于广告定向。订阅支付由 Google Play 处理，受 Google 的隐私政策约束。
-      </p>
-      <p>
-        We do not sell your chat content to third parties, nor use chat text for ad targeting. Subscription payments are processed by Google Play and subject to Google's privacy policy.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>4. 数据存储与安全 / Data Storage and Security</h2>
-      <p>
-        应用尽量采用本地处理策略。我们采取合理安全措施防止未经授权访问、披露或篡改。
-      </p>
-      <p>
-        The app follows a local-first processing approach whenever possible. We take reasonable safeguards to prevent unauthorized access, disclosure, or tampering.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>5. 未成年人隐私 / Children's Privacy</h2>
-      <p>
-        本应用不面向 13 岁以下儿童提供服务。若您认为我们可能收集了未成年人信息，请联系我们，我们将尽快处理。
-      </p>
-      <p>
-        This app is not intended for children under 13. If you believe we may have collected a minor's information, please contact us and we will handle it promptly.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>6. 您的权利 / Your Rights</h2>
+      <h2>2. Permissions and Purpose</h2>
       <ul>
-        <li>您可通过系统设置关闭权限或卸载应用。</li>
-        <li>您可通过 Google Play 管理或取消订阅。</li>
-        <li>您可联系我们咨询隐私相关问题。</li>
+        <li><code>BIND_ACCESSIBILITY_SERVICE</code>: read visible UI text to provide translation features requested by the user.</li>
+        <li><code>SYSTEM_ALERT_WINDOW</code>: display translation overlay above supported chat apps.</li>
+        <li><code>INTERNET</code>: download/update offline translation models and handle billing-related communication.</li>
+        <li><code>ACCESS_NETWORK_STATE</code>: determine network availability (Wi-Fi/mobile).</li>
+        <li><code>POST_NOTIFICATIONS</code>: show service status notifications (Android 13+).</li>
+        <li><code>FOREGROUND_SERVICE</code>: keep translation service running reliably.</li>
       </ul>
+      <p>Users can revoke permissions at any time in device settings.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Data Sharing</h2>
+      <p>
+        We do not share chat content with third parties for marketing or profiling.
+        Subscription payments are processed by Google Play and governed by Google's policies.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. Data Retention and Security</h2>
+      <p>
+        We retain only data necessary to provide app functionality. We apply reasonable technical and organizational safeguards to protect data.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Children's Privacy</h2>
+      <p>
+        The app is not directed to children under 13. If you believe a child provided personal data, contact us and we will review and delete it where applicable.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. User Choices</h2>
       <ul>
-        <li>You can disable permissions in system settings or uninstall the app.</li>
-        <li>You can manage or cancel subscriptions through Google Play.</li>
-        <li>You can contact us for privacy-related requests.</li>
+        <li>Disable permissions in Android settings.</li>
+        <li>Uninstall the app at any time.</li>
+        <li>Manage or cancel subscriptions in Google Play.</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>7. 政策更新 / Policy Updates</h2>
+      <h2>7. Changes to This Policy</h2>
       <p>
-        我们可能根据法律法规或产品变化更新本政策。更新后将通过本页面发布，并更新“生效日期”。
-      </p>
-      <p>
-        We may update this policy due to legal requirements or product changes. Updates will be posted on this page with a revised effective date.
+        We may update this policy from time to time. The latest version will be posted on this page with the updated effective date.
       </p>
     </section>
 
     <section class="card">
-      <h2>8. 联系我们 / Contact</h2>
-      <p>
-        邮箱 / Email:
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
-      </p>
-      <p class="meta">
-        发布前请将上方邮箱替换为你的真实联系方式（Google Play 审核会看这个）。
-      </p>
+      <h2>8. Contact</h2>
+      <p>Email: <a href="mailto:yinbangyun@gmail.com">yinbangyun@gmail.com</a></p>
     </section>
   </main>
 </body>
